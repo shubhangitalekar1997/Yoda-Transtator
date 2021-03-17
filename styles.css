@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #50b67e;
+    --black: #333333;
+}
+
+body {
+    margin: 0;
+    font-family: 'Kalam', cursive;
+    color: #333333;
+    background-color: #81d4a7;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    min-height: 10vh;
+}
+header > h3{
+    margin: 0;
+    font-size: x-large;
+}
+.container{
+    display: flex;
+    max-width: 80%;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 1rem;
+}
+
+.container h4{
+    margin-top: 0;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    margin: 1rem;
+    margin-bottom: 0;
+    min-height: 20vh;
+    background: url(/images/Yoda-image.jpg) center center no-repeat; /* This ruins default border */
+    background-size: 100%;
+    border: 1px solid rgb(243, 110, 110); 
+    resize: none;
+    color:rgb(3, 83, 39);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+textarea::-webkit-input-placeholder {
+    color: rgb(165, 218, 20);
+  }
+#button{
+    background-color: var(--primary);
+    border: none;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    font-family: 'Kalam', cursive;
+    font-size: large;
+}
+
+#output{
+    box-sizing: border-box;
+    min-height: 20vh;
+    max-height: 25vh;
+    width: 100%;
+    border: 1px solid black;
+    color: rgb(3, 83, 39);
+    text-align: center;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--primary);
+    text-align: center;
+    max-height: 20vh;
+}
+footer h3,p{
+    margin: 0;
+}
